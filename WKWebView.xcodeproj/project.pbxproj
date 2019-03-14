@@ -15,6 +15,7 @@
 		6AFF160A223A216900D7AF48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF1609223A216900D7AF48 /* main.m */; };
 		6AFF1614223A216A00D7AF48 /* WKWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF1613223A216A00D7AF48 /* WKWebViewTests.m */; };
 		6AFF161F223A216A00D7AF48 /* WKWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF161E223A216A00D7AF48 /* WKWebViewUITests.m */; };
+		6AFF162E223A2EE400D7AF48 /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF162D223A2EE400D7AF48 /* JStoOC.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		6AFF161A223A216A00D7AF48 /* WKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFF161E223A216A00D7AF48 /* WKWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewUITests.m; sourceTree = "<group>"; };
 		6AFF1620223A216A00D7AF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFF162C223A288300D7AF48 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6AFF162D223A2EE400D7AF48 /* JStoOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOC.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +108,13 @@
 				6AFF15FB223A216500D7AF48 /* AppDelegate.m */,
 				6AFF15FD223A216500D7AF48 /* ViewController.h */,
 				6AFF15FE223A216500D7AF48 /* ViewController.m */,
+				6AFF162D223A2EE400D7AF48 /* JStoOC.html */,
 				6AFF1600223A216500D7AF48 /* Main.storyboard */,
 				6AFF1603223A216900D7AF48 /* Assets.xcassets */,
 				6AFF1605223A216900D7AF48 /* LaunchScreen.storyboard */,
 				6AFF1608223A216900D7AF48 /* Info.plist */,
 				6AFF1609223A216900D7AF48 /* main.m */,
+				6AFF162C223A288300D7AF48 /* PrefixHeader.pch */,
 			);
 			path = WKWebView;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFF162E223A2EE400D7AF48 /* JStoOC.html in Resources */,
 				6AFF1607223A216900D7AF48 /* LaunchScreen.storyboard in Resources */,
 				6AFF1604223A216900D7AF48 /* Assets.xcassets in Resources */,
 				6AFF1602223A216500D7AF48 /* Main.storyboard in Resources */,
@@ -436,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebView/PrefixHeader.pch";
 				INFOPLIST_FILE = WKWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebView/PrefixHeader.pch";
 				INFOPLIST_FILE = WKWebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
